@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: user-service
+
+server:
+  port: 9092
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9091/eureka
+  instance:
+    prefer-ip-address: true
+
+# loadbalancer.ribbon.enabled: true  # Uncomment if needed
